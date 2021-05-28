@@ -1,9 +1,6 @@
 #!/bin/bash
 set -o errexit -o pipefail
-#find ${BUILD_PREFIX} -name libXfixes.so.3 -print
-#find ${PREFIX} -name libXfixes.so.3 -print
-#export LD_LIBRARY_PATH=${BUILD_PREFIX}/x86_64-conda-linux-gnu/sysroot/usr/lib64
-export LD_LIBRARY_PATH=${BUILD_PREFIX}/lib
+export LD_LIBRARY_PATH=${BUILD_PREFIX}/x86_64-conda-linux-gnu/sysroot/usr/lib64:${BUILD_PREFIX}/lib
 ldd -r $PREFIX/lib/R/library/rgl/libs/rgl.so
 if [[ ${target_platform} =~ linux.* ]] || [[ ${target_platform} == win-32 ]] || [[ ${target_platform} == win-64 ]] || [[ ${target_platform} == osx-64 ]]; then
   export DISABLE_AUTOBREW=1
