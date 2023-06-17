@@ -1,11 +1,11 @@
-About r-tkrgl
-=============
+About r-tkrgl-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tkrgl-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=tkrgl
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-tkrgl-feedstock/blob/main/LICENSE.txt)
 
 Summary: TK widget tools for the rgl package have been moved to rgl.
 
